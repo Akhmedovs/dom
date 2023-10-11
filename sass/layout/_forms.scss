@@ -1,0 +1,468 @@
+.history{
+    margin-bottom: 12.2rem;
+    .container{
+        position: relative;
+        @include responsive (big-table){
+            padding-bottom: 500px;
+            margin-top: 500px;
+            flex-direction: column;
+        }
+        @include responsive(table){
+            padding-bottom: 250px;
+        }
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text-wrapper{
+            margin-bottom: 3rem;
+            width: 100%;
+            max-width: 444px;
+            @include responsive (big-table){
+                width: 100%;
+                max-width: 700px;
+            }
+        }
+        h2{
+            margin-bottom: 2.1rem;
+            span{
+                color: $color-second-title;
+            }
+            @include responsive (table){
+                font-size: 4.5rem;
+            }
+        }
+        p{
+            font-family: $open;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.35;
+        }
+        img{
+            position: absolute;
+            &:hover{
+                z-index: 4;
+            }
+        }
+        .cake{
+            @include responsive(big-table){
+                padding: 0 auto;
+                bottom: 0;
+                right: 340px;
+            }
+            @include responsive(table){
+                right: 240px;
+            }
+            @include responsive(phone){
+                width: 137px;
+                height: 221px;
+                right: 210px;
+            }
+            right: 100px;
+        }
+        .kitay{
+            @include responsive(big-table){
+            padding: 0 auto;
+            bottom: 0;
+            right: 510px;
+            }
+            @include responsive(table){
+                right: 380px;
+            }
+            @include responsive(phone){
+                width: 155px;
+                height: 184px;
+                right: 290px;
+            }   
+            right: 260px;
+        }
+        .flower{
+            @include responsive(big-table){
+            padding: 0 auto;
+            bottom: -67;
+            right: 230px;
+            }
+            @include responsive(table){
+                right: 100px;
+            }
+            @include responsive(phone){
+                right: 140px;
+                bottom:-50px;
+                width: 136px;
+                height: 154px;
+            }
+            right: 0px;
+            bottom: -67px;
+        }
+        .box{
+            @include responsive(big-table){
+            padding: 0 auto;
+            bottom: 0;
+            top: 470px;
+            right: 290px;
+            }
+            @include responsive(table){
+                top: 410px;
+                right: 190px;
+            }
+            @include responsive(phone){
+                top: 380px;
+                right: 160px;
+                width: 194px;
+                height:110px;
+            }
+            top: 20px;
+            right: 52px;
+            z-index: -1;
+        }
+    }
+}
+
+
+
+// SALE STYLES
+.sale{
+    margin-bottom: 13rem;
+    padding: 9rem 0;
+    .container{
+        @include responsive (big-table){
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 601px;
+            @include responsive (big-table){
+                text-align: center;
+                width: 100%;
+                max-width: 540px;
+            }
+            h3{
+                margin-bottom: 2rem;
+                @include responsive (big-table){
+                    font-size: 4.5rem;
+                }
+                @include responsive (table){
+                    font-size: 4.25rem;
+                }
+                @include responsive (phone){
+                    font-size: 4rem;
+                }
+            }
+            p{
+                font-family: $open;
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 1.35;
+                color: $color-white;
+                @include responsive (big-table){
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        .secondary-btn{
+            margin-bottom: 2.9rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+// dishes styles
+.dishes{
+    margin-bottom: 15rem;
+    h2{
+        text-align: center;
+        margin-bottom: 14rem;
+        @include responsive (table){
+            font-size: 5rem;
+        }
+        @include responsive (phone){
+            font-size: 4.5rem;
+            margin-bottom: 10rem;
+        }
+        span{
+            color: $color-second-title;
+        }
+    }
+    .dishes__wrapper{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        @include responsive (table){
+            flex-direction: column;
+        }
+        img{
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+            @include responsive (table){
+                margin-right: 0;
+            }
+        }
+        ul{
+            @include responsive (table){
+                margin-right: 3.9rem;
+            }
+        }
+        li{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+            p{
+                font-family: $tinos;
+                font-size: 2.6rem;
+                line-height: 1.15;
+                @include responsive (phone){
+                    margin-left: 1rem;
+                    font-size: 2rem;
+                }
+
+                span{
+                    @include responsive (big-table){
+                        display: none;
+                    }
+                }
+            }
+            img{
+                @include responsive (table){
+                    width: 140px;
+                    height: 120px;
+                }
+            }
+        }
+        @include responsive (table){
+            li:not(:last-child){
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+// MENU STYLES
+.menu{
+    padding-bottom: 22.1rem;
+    h2{
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 13.8rem;
+        padding-top: 10rem;
+    }
+    .menu__wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) ;
+        gap: 3rem;
+        @include responsive (min-table){
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) ;
+        }
+        @include responsive (phone){
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+        }
+        div{
+            padding-bottom: 22.1rem;
+            @include responsive (min-table){
+                // width: 100%;
+                // max-width: 840px;
+                margin: 0 auto;
+            }
+            .rec{
+                padding: 0.7rem 1.5rem 1.1rem;
+                width: 100%;
+                max-width: 124px;
+                background-color: $color-text;
+                position: absolute;
+                top:0;
+                left: 0;
+                font-family: $open;
+                font-weight: 400;
+                font-size: 1.3rem;
+                line-height: 1;
+                text-align: center;
+                color: $color-black;
+            }
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            background-color: $color-white;
+            padding-top: 8rem;
+            padding-left: auto;
+            padding-right: auto;
+            padding-bottom:  2.9rem;
+            text-align: center;
+            .img-span{
+                width: 100%;
+                max-width: 93px;
+                height: 93px;
+                border: 7px solid $color-white;
+                border-radius: 50%;
+                position: absolute;
+                background-color: $color-text;
+                font-family: $cookie;
+                font-size: 3rem;
+                line-height: 1.1;
+                color: $color-white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 200px;
+                right: 50px;
+            }
+            img{
+                margin-bottom: 2.2rem;
+            }
+            h5{
+                font-family: $tinos;
+                font-weight: 400;
+                font-size: 2.6rem;
+                line-height: 1.15;
+                margin-bottom: 1.7rem;
+            }
+            p{
+                font-family: $open;
+                font-size: 1.6rem;
+                line-height: 1.35;
+                margin-bottom: 2rem;
+            }
+            .secondary-btn{
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+// GEST STYLES
+.gest{
+    background-color: $color-bg;
+    padding-top: 10.4rem;
+    padding-bottom: 13.9rem;
+    text-align: center;
+    p{
+        margin: 0 auto;
+        font-style: italic;
+        width: 100%;
+        max-width: 910px;
+        font-size: 2rem;
+        line-height: 1.35;
+        margin-bottom: 3rem;
+    }
+    p:last-child{
+        font-style: normal;
+    }
+    img{
+        margin-bottom: 1.6rem;
+    }
+    h5{
+        margin-bottom: 0.9rem;
+    }
+}
+
+
+// galery styles
+.galery{
+    margin-bottom: 10rem;
+    position: relative;
+    .red{
+        position: absolute;
+        top: 110px;
+        right: 0px;
+        width: 30px;
+        height: 100px;
+        display: block;
+        background-color: $color-red;
+        @include responsive (table){
+            display: none;
+        }
+    }
+    span{
+        position: absolute;
+        top: 110px;
+        width: 30px;
+        height: 100px;
+        display: block;
+        background-color: $color-red;
+        @include responsive (table){
+            display: none;
+        }
+    }
+
+    .container{
+        h2{
+            text-align: center;
+            margin-top: 10rem;
+            margin-bottom: 6rem;
+            b{
+                font-weight: 400;
+                color: $color-text;
+            }
+
+        }
+        img{
+            padding: 0 auto;
+        }
+    }
+    @include responsive(laptop){
+        img{
+            width: 100%;
+            height: auto;
+        }
+        span{
+            top: 10px;
+        }
+        .red{
+            top: 10px;
+        }
+    }
+
+    @include responsive(miniphone){
+        img{
+            width: 350px;
+            height: 274px;
+            object-fit: cover;
+        }
+    }
+}
+
+// COOKER
+.cooker{
+    margin-bottom: 10rem;
+    h2{
+        text-align: center;
+        margin-bottom: 10.7rem;
+        @include responsive (phone){
+            font-size: 4rem;
+        }
+        span{
+            color: $color-text;
+        }
+    }
+    .container{
+        ul{
+            display: flex;
+            @include responsive (miniphone){
+                flex-direction: column;
+            }
+            li:not(:last-child){
+                margin-right: 3rem;
+                @include responsive (phone){
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+img{
+    transition: all 0.3s;
+}
+img:hover{
+    transform: scale(1.05);
+    z-index: 0;
+}

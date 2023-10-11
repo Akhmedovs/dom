@@ -1,0 +1,67 @@
+// GLOBAL STYLES
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+:focus{
+    outline: 1px dashed $color-primary;
+    outline-offset: 2px;
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+}
+.container{
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+h1{
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 1.18;
+    color: $color-text;
+    font-family: $tinos;
+}
+h2{
+    font-family: $tinos;
+    font-weight: 400;
+    font-size: 5.4rem;
+    line-height: 1.14;
+    color: $color-black;
+    margin: 0;
+}
+h3{
+    font-weight: 400;
+    font-size: 5.1rem;
+    line-height: 1.1;
+    color: $color-text;
+    font-family: $tinos;
+    margin: 0;
+}
+h4{
+    font-family: $tinos;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1;
+    color: $color-title;
+    margin: 0;
+}

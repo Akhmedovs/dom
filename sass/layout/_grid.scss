@@ -1,0 +1,58 @@
+.meal{
+    .container{
+        margin-bottom: -221px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 4.2rem;
+        @include responsive (big-table){
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 3rem;
+            margin-bottom: -721px;
+        }
+        @include responsive (table){
+            margin-bottom: -821px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        @include responsive (miniphone){
+            margin-bottom: -821px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            .meal__wrapper{
+                padding-top: 5rem;
+                padding-bottom: 3rem;
+            }
+        }
+        .meal__wrapper{
+            text-align: center;
+            width: 100%;
+            max-width: 349;
+            padding: 5rem 1.6rem 3rem;
+            box-shadow: 10px 10px 40px 20px rgba(0, 0, 0,0.1);
+            background-color: $color-white;
+            h4{
+                margin-bottom: 2rem;
+            }
+            span{
+                color: $color-second-title;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-family: $tinos;
+                font-size: 2.6rem;
+                line-height: 1.15;
+                color:$color-secondary;
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+            transition: all 0.4s;
+        }
+    }
+}
+.meal__wrapper{
+    @include responsive (table){
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 2.5rem
+    }
+}
